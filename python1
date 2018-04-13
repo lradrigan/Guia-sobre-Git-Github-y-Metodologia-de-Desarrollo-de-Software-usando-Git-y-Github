@@ -1,0 +1,7 @@
+import MySQLdb
+db = MySQLdb.connect(host='192.168.50.150', user='lradrigan',passwd='12345', db='lradrigan')
+cursor = db.cursor()
+cursor.execute("SELECT id, cantidad, muestreo, x, y, z, gx, gy, gz FROM tabla1 ")
+//quiero graficar la variable x,y,z, pero una vez que lea la base de datos y 
+grafique la idea es que  veya graficando los nuevos detos de la base de datos. 
+( la base de datos le llegan algo asi como 100 datos nuevos por segundo)
